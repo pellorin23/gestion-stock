@@ -18,7 +18,7 @@ export class StockService {
 
   findOne(id: number) {
     const s = this.stocks.find(s=>s.id==id);
-    return `This action returns a #${id} stock`;
+    return s;
   }
 
   update(id: number, updateStockDto: UpdateStockDto) {
